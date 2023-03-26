@@ -1,99 +1,799 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="assets\logo.png" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <title>Medium</title>
-</head>
-<body>  
+  </head>
 
+  <body>
     <div class="header">
-        <div class="top-left">
-            <div class="logo">
-                <img src="assets/logo.png" alt="">                
-            </div>
-
-            <div class="searchbar">
-                <span class="material-symbols-outlined">
-                    search
-                </span>
-
-                <input type="search" placeholder="Search Medium" class="bar">
-            </div>
+      <div class="top-left">
+        <div class="logo">
+          <img src="assets/logo.png" alt="" />
         </div>
 
-        <div class="top-right">
-            <div class="write">
-                <span class="material-symbols-outlined">
-                    edit_square
-                </span>
-                <span>Write</span>
-            </div>
+        <div class="searchbar">
+          <span class="material-symbols-outlined"> search </span>
 
-            <div class="alert">
-                <span class="material-symbols-outlined">
-                    notifications
-                </span>
-            </div>
-
-            <div class="account">
-                <span class="material-symbols-outlined">
-                    account_circle
-                </span>
-
-                <span class="material-symbols-outlined">
-                    expand_more
-                </span>
-            </div>
-
+          <input type="search" placeholder="Search Medium" class="bar" />
         </div>
+      </div>
+
+      <div class="top-right">
+        <div class="write">
+          <span class="material-symbols-outlined"> edit_square </span>
+          <span>Write</span>
+        </div>
+
+        <div class="alert">
+          <span class="material-symbols-outlined"> notifications </span>
+        </div>
+
+        <div class="account">
+          <span class="material-symbols-outlined"> account_circle </span>
+
+          <span class="material-symbols-outlined"> expand_more </span>
+        </div>
+      </div>
     </div>
 
     <div class="sub-header">
-        <span class="material-symbols-outlined">
-            auto_awesome
-        </span>
+      <span class="material-symbols-outlined"> auto_awesome </span>
 
-        <span>Get unlimited access to all of Medium for less than $1/week.</span>
+      <span>Get unlimited access to all of Medium for less than $1/week.</span>
 
-        <a href="#">Become a member</a>
+      <a href="#">Become a member</a>
     </div>
 
     <div class="main">
-        <div class="home">
-            <div class="navbar-wrapper">
-                <div class="navbar">
-                    <ul>
-                        <li>
-                            <span class="material-symbols-outlined">
-                                add
-                            </span>
-                        </li>
+      <div class="home">
+        <div class="navbar-group">
+          <div class="navbar">
+            <ul>
+              <li>
+                <span class="material-symbols-outlined"> add </span>
+              </li>
 
-                        <li>For you</li>
+              <li>For you</li>
 
-                        <li>Following</li>
+              <li>Following</li>
 
-                        <li>Self Improvement</li>
+              <li>Self Improvement</li>
 
-                        <li>Technology</li>
-                        
-                        <li>Data Science</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="news">
-                <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fugiat voluptatum aliquid! Quam rem, dicta possimus, maiores atque, aliquid eum laborum soluta quaerat voluptatibus qui nesciunt facilis eveniet molestias aspernatur deleniti quas fugit quos nobis. Atque nostrum cupiditate officiis dolor inventore ut culpa beatae ducimus. Quidem quo consequuntur neque sit.</article>
-                
-                <article>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam itaque nemo, optio consequatur, quasi in eveniet libero repellat voluptas ab quos impedit reprehenderit? Ut, accusantium? Maxime nisi velit dolore ea eos, sint debitis, harum sed id incidunt eaque voluptatum error.</article>
-            </div>
+              <li>Technology</li>
+
+              <li>Data Science</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="sidebar">SIDE</div>
+        <div class="main-group">
+          <!-- ARTICLE 1 -->
+          <div class="article-container">
+            <div class="article-title">
+              <div class="userpic-container">
+                <img src="assets\profile-images\pic_1.jpg" alt="pic_1" />
+              </div>
+              <p class="article-author-id">
+                <a href="#">CyberExpert </a>
+              </p>
+              <p class="article-conjunction">in</p>
+              <p class="article-path">
+                <a href="#">Cybersecurity</a>
+              </p>
+              <div class="member-only-section">
+                <a href="#" class="member-tag-anchor">
+                  <p class="article-member-icon"><i class="bi bi-stars"></i></p>
+                  <p class="article-member-only">member only</p>
+                </a>
+              </div>
+            </div>
+            <div class="article">
+              <div class="article-content">
+                <a href="#" class="article-content-text">
+                  <h2 class="article-h2">
+                    The Future of Cybersecurity: Challenges and Solutions
+                  </h2>
+                  <p class="article-p">
+                    With growing dependence on technology, the risk of
+                    cyberattacks is increasing day by day. CyberExpert
+                    highlights the challenges that companies and organizations
+                    face in protecting their data and systems from malicious
+                    attacks. The article also explores potential solutions such
+                    as increased investment in cybersecurity measures and the
+                    development of more advanced technology to prevent cyber
+                    threats. CyberExpert emphasizes the importance of staying
+                    ahead of the curve when it comes to cybersecurity.
+                  </p>
+                </a>
+                <div class="article-footer">
+                  <div class="article-footer-content">
+                    <p class="article-footer-button">
+                      <a href="#">Cybersecurity Analysis</a>
+                    </p>
+                    <p class="article-footer-time">3 min read</p>
+                    <span class="article-footer-separator">·</span>
+                    <p class="article-footer-popular">
+                      <a href="#">Selected for you</a>
+                    </p>
+                  </div>
+                  <div class="cta-icons">
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-bookmark-plus"></i>
+                    </a>
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-dash-circle"></i>
+                    </a>
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-three-dots"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="article-img">
+                <div class="article-img-container">
+                  <img src="assets\profile-images\image_1.jpg" alt="image_1" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-container">
+            <div class="article-title">
+              <div class="userpic-container">
+                <img src="assets\profile-images\pic_2.jpg" alt="pic_2" />
+              </div>
+              <p class="article-author-id">
+                <a href="#">CodeMaster</a>
+              </p>
+              <p class="article-conjunction">in</p>
+              <p class="article-path">
+                <a href="#">TechCrunch</a>
+              </p>
+              <div class="member-only-section">
+                <a href="#" class="member-tag-anchor">
+                  <p class="article-member-icon"><i class="bi bi-stars"></i></p>
+                  <p class="article-member-only">member only</p>
+                </a>
+              </div>
+            </div>
+            <div class="article">
+              <div class="article-content">
+                <a href="#" class="article-content-text">
+                  <h2 class="article-h2">
+                    Why Learning to Code is Essential in Today's World
+                  </h2>
+                  <p class="article-p">
+                    Coding is the backbone of modern technology, and without it,
+                    we wouldn't be able to use the devices and software that we
+                    rely on every day. CodeMaster explains how learning to code
+                    can open up new opportunities in fields such as software
+                    development, data analysis, and cybersecurity. The article
+                    also emphasizes the benefits of coding for problem-solving
+                    skills and creativity. CodeMaster encourages readers to
+                    start learning to code and take advantage of the vast
+                    potential that coding skills offer.
+                  </p>
+                </a>
+                <div class="article-footer">
+                  <div class="article-footer-content">
+                    <p class="article-footer-button">
+                      <a href="#">Technology</a>
+                    </p>
+                    <p class="article-footer-time">5 min read</p>
+                    <span class="article-footer-separator">·</span>
+                    <p class="article-footer-popular">
+                      <a href="#">Popular on Medium</a>
+                    </p>
+                  </div>
+                  <div class="cta-icons">
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-bookmark-plus"></i>
+                    </a>
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-dash-circle"></i>
+                    </a>
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-three-dots"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="article-img">
+                <div class="article-img-container">
+                  <img src="assets\profile-images\image_2.png" alt="image_2" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="article-container">
+            <div class="article-title">
+              <div class="userpic-container">
+                <img src="assets\profile-images\image_3.png" alt="image_3" />
+              </div>
+              <p class="article-author-id">
+                <a href="#">TechNoob</a>
+              </p>
+              <p class="article-conjunction">in</p>
+              <p class="article-path">
+                <a href="#">The Onion</a>
+              </p>
+            </div>
+            <div class="article">
+              <div class="article-content">
+                <a href="#" class="article-content-text">
+                  <h2 class="article-h2">
+                    The Struggle of Keeping Up with Technology
+                  </h2>
+                  <p class="article-p">
+                    From constantly updating software to learning new devices,
+                    TechNoob details the challenges of staying current in the
+                    ever-evolving world of technology. The article pokes fun at
+                    the frustration of dealing with never-ending pop-ups and the
+                    fear of breaking something when trying to fix it. TechNoob
+                    reminds readers that it's okay to be a little clueless about
+                    technology and encourages them to embrace the humor in the
+                    struggle of keeping up.
+                  </p>
+                </a>
+                <div class="article-footer">
+                  <div class="article-footer-content">
+                    <p class="article-footer-button">
+                      <a href="#">Humor</a>
+                    </p>
+                    <p class="article-footer-time">9 min read</p>
+                    <span class="article-footer-separator">·</span>
+                    <p class="article-footer-popular">
+                      <a href="#">Popular on Medium</a>
+                    </p>
+                  </div>
+                  <div class="cta-icons">
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-bookmark-plus"></i>
+                    </a>
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-dash-circle"></i>
+                    </a>
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-three-dots"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="article-img">
+                <div class="article-img-container">
+                  <img src="assets\profile-images\image_3.png" alt="image_3" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="article-container">
+            <div class="article-title">
+              <div class="userpic-container">
+                <img src="assets\profile-images\pic_4.jpg" alt="pic_4" />
+              </div>
+              <p class="article-author-id">
+                <a href="#">CodeTrendsetter </a>
+              </p>
+              <p class="article-conjunction">in</p>
+              <p class="article-path">
+                <a href="#">TechCrunch</a>
+              </p>
+              <div class="member-only-section">
+                <a href="#" class="member-tag-anchor">
+                  <p class="article-member-icon"><i class="bi bi-stars"></i></p>
+                  <p class="article-member-only">member only</p>
+                </a>
+              </div>
+            </div>
+            <div class="article">
+              <div class="article-content">
+                <a href="#" class="article-content-text">
+                  <h2 class="article-h2">
+                    Top Coding Trends to Watch Out for in 2023
+                  </h2>
+                  <p class="article-p">
+                    The article highlights the importance of tech-driven
+                    efficiency, the growing reliance on no-code tools, and the
+                    adoption of next-generation AI across industries.
+                    CodeTrendsetter also discusses the rise of blockchain
+                    technology and the increasing importance of cybersecurity.
+                    With the rapid pace of technological advancements, staying
+                    up to date with these coding trends will be crucial for
+                    developers and businesses alike.
+                  </p>
+                </a>
+                <div class="article-footer">
+                  <div class="article-footer-content">
+                    <p class="article-footer-button">
+                      <a href="#">Technology</a>
+                    </p>
+                    <p class="article-footer-time">4 min read</p>
+                    <span class="article-footer-separator">·</span>
+                    <p class="article-footer-popular">
+                      <a href="#">Selected for you</a>
+                    </p>
+                  </div>
+                  <div class="cta-icons">
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-bookmark-plus"></i>
+                    </a>
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-dash-circle"></i>
+                    </a>
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-three-dots"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="article-img">
+                <div class="article-img-container">
+                  <img src="assets\profile-images\image_4.jpg" alt="image_4" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="article-container">
+            <div class="article-title">
+              <div class="userpic-container">
+                <img src="assets\profile-images\pic_5.png" alt="pic_5" />
+              </div>
+              <p class="article-author-id">
+                <a href="#">CodeSimplicity</a>
+              </p>
+              <p class="article-conjunction">in</p>
+              <p class="article-path">
+                <a href="#">TechCrunch</a>
+              </p>
+            </div>
+            <div class="article">
+              <div class="article-content">
+                <a href="#" class="article-content-text">
+                  <h2 class="article-h2">
+                    The Power of Simplicity in Software Development
+                  </h2>
+                  <p class="article-p">
+                    Complexity is the biggest impediment to growth and
+                    profitability in the software industry, as development costs
+                    increase exponentially with complexity. The author proposes
+                    a scientific approach to software development that uses
+                    principles and rules to guide decision-making, as outlined
+                    in the book "Code Simplicity: The Science of Software
+                    Development." By investing in simplicity, companies can
+                    bring software products to market more quickly and maintain
+                    and enhance them more efficiently. CodeSimplicity encourages
+                    readers to embrace simplicity and invest in the speed and
+                    success of their software development efforts.
+                  </p>
+                </a>
+                <div class="article-footer">
+                  <div class="article-footer-content">
+                    <p class="article-footer-button">
+                      <a href="#">Software Development</a>
+                    </p>
+                    <p class="article-footer-time">3 min read</p>
+                    <span class="article-footer-separator">·</span>
+                    <p class="article-footer-popular">
+                      <a href="#">Selected for you</a>
+                    </p>
+                  </div>
+                  <div class="cta-icons">
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-bookmark-plus"></i>
+                    </a>
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-dash-circle"></i>
+                    </a>
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-three-dots"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="article-img">
+                <div class="article-img-container">
+                  <img src="assets\profile-images\image_5.png" alt="image_5" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="article-container">
+            <div class="article-title">
+              <div class="userpic-container">
+                <img src="assets/profile-images\pic_6.jpg" alt="pic_6" />
+              </div>
+              <p class="article-author-id">
+                <a href="#">DesignTrendsetter</a>
+              </p>
+              <p class="article-conjunction">in</p>
+              <p class="article-path">
+                <a href="#">CSS-Tricks</a>
+              </p>
+              <div class="member-only-section">
+                <a href="#" class="member-tag-anchor">
+                  <p class="article-member-icon"><i class="bi bi-stars"></i></p>
+                  <p class="article-member-only">member only</p>
+                </a>
+              </div>
+            </div>
+            <div class="article">
+              <div class="article-content">
+                <a href="#" class="article-content-text">
+                  <h2 class="article-h2">
+                    Top Web Design Trends to Watch Out for in 2023
+                  </h2>
+                  <p class="article-p">
+                    The article highlights the importance of keeping up with the
+                    latest design elements and features to create a successful
+                    website. The author provides a list of 30 website design
+                    trends and standards that are predicted to be popular in
+                    2023, including fast page load times, personalized content,
+                    and accessibility. The article also emphasizes the
+                    importance of optimizing website performance for a good user
+                    experience and improved conversion rates. DesignTrendsetter
+                    encourages readers to embrace innovation and stay ahead of
+                    the curve in web design.
+                  </p>
+                </a>
+                <div class="article-footer">
+                  <div class="article-footer-content">
+                    <p class="article-footer-button">
+                      <a href="#">Web Design</a>
+                    </p>
+                    <p class="article-footer-time">5 min read</p>
+                    <span class="article-footer-separator">·</span>
+                    <p class="article-footer-popular">
+                      <a href="#">Popular on Medium</a>
+                    </p>
+                  </div>
+                  <div class="cta-icons">
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-bookmark-plus"></i>
+                    </a>
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-dash-circle"></i>
+                    </a>
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-three-dots"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="article-img">
+                <div class="article-img-container">
+                  <img src="assets\profile-images\image_6.png" alt="image_6" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="article-container">
+            <div class="article-title">
+              <div class="userpic-container">
+                <img src="assets\profile-images\pic_7.png" alt="pic_7" />
+              </div>
+              <p class="article-author-id">
+                <a href="#">JSExpert</a>
+              </p>
+              <p class="article-conjunction">in</p>
+              <p class="article-path">
+                <a href="#">JavaScript</a>
+              </p>
+              <div class="member-only-section">
+                <a href="#" class="member-tag-anchor">
+                  <p class="article-member-icon"><i class="bi bi-stars"></i></p>
+                  <p class="article-member-only">member only</p>
+                </a>
+              </div>
+            </div>
+            <div class="article">
+              <div class="article-content">
+                <a href="#" class="article-content-text">
+                  <h2 class="article-h2">
+                    5 JavaScript Techniques to Enhance User Experience
+                  </h2>
+                  <p class="article-p">
+                    JSExpert details five JavaScript techniques that can be
+                    easily implemented on any website to provide a richer user
+                    experience. The article covers techniques such as lazy
+                    loading, infinite scrolling, and smooth scrolling. JSExpert
+                    also discusses the importance of performance optimization
+                    and provides tips for improving website speed. As a
+                    JavaScript expert, the author emphasizes the importance of
+                    staying up to date with the latest coding techniques and
+                    best practices for a successful website.
+                  </p>
+                </a>
+                <div class="article-footer">
+                  <div class="article-footer-content">
+                    <p class="article-footer-button">
+                      <a href="#">CSS-Tricks</a>
+                    </p>
+                    <p class="article-footer-time">10 min read</p>
+                    <span class="article-footer-separator">·</span>
+                    <p class="article-footer-popular">
+                      <a href="#">Selected for you</a>
+                    </p>
+                  </div>
+                  <div class="cta-icons">
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-bookmark-plus"></i>
+                    </a>
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-dash-circle"></i>
+                    </a>
+                    <a href="#" class="icon-footer-action-item">
+                      <i class="bi bi-three-dots"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="article-img">
+                <div class="article-img-container">
+                  <img src="assets\profile-images\image_7.png" alt="image_7" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-aside-group">
+        <div class="staff-thumbs-group">
+          <div class="staff-thumbs-title">
+            <h2>Staff thumbs</h2>
+          </div>
+          <div class="staff-thumbs-post">
+            <div class="staff-thumbs-post-title">
+              <div class="staff-thumbs-post-img">
+                <img
+                  src="assets\profile-images\staff_pic_1.png"
+                  alt="staff_pic_1"
+                />
+              </div>
+              <div class="staff-thumbs-post-id">
+                <h4>
+                  <a href="#" class="staff-post-id-anchor">Medium Staff</a>
+                </h4>
+              </div>
+            </div>
+            <div class="staff-thumbs-post-content">
+              <h2>
+                <a href="#" class="staff-post-content-anchor">
+                  Ace Your Computer Science Certification with These Top Courses
+                </a>
+              </h2>
+            </div>
+          </div>
+          <div class="staff-thumbs-post">
+            <div class="staff-thumbs-post-title">
+              <div class="staff-thumbs-post-img">
+                <img
+                  src="assets\profile-images\staff_pic_2.jpg"
+                  alt="staff_pic_2"
+                />
+              </div>
+              <div class="staff-thumbs-post-id">
+                <h4>
+                  <a href="#" class="staff-post-id-anchor">John White</a>
+                </h4>
+              </div>
+            </div>
+            <div class="staff-thumbs-post-content">
+              <h2>
+                <a href="#" class="staff-post-content-anchor">
+                  The Benefits of Online Learning for Computer Science Students
+                </a>
+              </h2>
+            </div>
+          </div>
+          <div class="staff-thumbs-post">
+            <div class="staff-thumbs-post-title">
+              <div class="staff-thumbs-post-img">
+                <img
+                  src="assets\profile-images\staff_pic_3.jpg"
+                  alt="staff_pic_3"
+                />
+              </div>
+              <div class="staff-thumbs-post-id">
+                <h4>
+                  <a href="#" class="staff-post-id-anchor">Jerry Scotti</a>
+                </h4>
+              </div>
+            </div>
+            <div class="staff-thumbs-post-content">
+              <h2>
+                <a href="#" class="staff-post-content-anchor">
+                  Mastering Computational Thinking: The Key to Problem-Solving
+                  in Computer Science
+                </a>
+              </h2>
+            </div>
+          </div>
+          <div class="see-more">
+            <p><a href="#">See the full list</a></p>
+          </div>
+        </div>
+        <div class="followtwitter">
+          <div class="social-logo">
+            <img src="assets/logo.png" alt="" />
+            <i class="bi bi-plus-lg"></i>
+            <i class="bi bi-twitter"></i>
+          </div>
+          <div class="twitter">
+            <h4>Discover Medium writers you already follow on Twitter.</h4>
+          </div>
+          <div class="twitter-button">
+            <a href="#" class="twitter-link">
+              <i class="bi bi-twitter"></i>
+              <p>Connect to Twitter</p>
+            </a>
+          </div>
+          <div class="see-later">
+            <a href="#" class="see-later__content">Maybe Later</a>
+          </div>
+        </div>
+        <div class="recommended-topics">
+          <div class="recommended-topics-title">
+            <h2>Recommended topics</h2>
+          </div>
+          <div class="recommended-topics-group">
+            <div class="topic-button">
+              <a href="#">
+                <p>Programming</p>
+              </a>
+            </div>
+            <div class="topic-button">
+              <a href="#">
+                <p>Data Science</p>
+              </a>
+            </div>
+            <div class="topic-button">
+              <a href="#">
+                <p>Technology</p>
+              </a>
+            </div>
+            <div class="topic-button">
+              <a href="#">
+                <p>Self Improvement</p>
+              </a>
+            </div>
+            <div class="topic-button">
+              <a href="#">
+                <p>Writing</p>
+              </a>
+            </div>
+            <div class="topic-button">
+              <a href="#">
+                <p>Relationships</p>
+              </a>
+            </div>
+            <div class="topic-button">
+              <a href="#">
+                <p>Machine Learning</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="who-to-follow">
+          <div class="who-to-follow-title">
+            <h2>Who to follow</h2>
+          </div>
+          <div class="who-to-follow-group">
+            <div class="who-to-follow-user">
+              <div class="follow-user-img">
+                <div class="follow-user-img-container">
+                  <img
+                    src="assets\profile-images\follow_pic_1.jpg"
+                    alt="Ivan Ranza"
+                  />
+                </div>
+              </div>
+              <div class="follow-user-content">
+                <div class="follow-user-content-id">
+                  <a href="#">
+                    <h2>Enrique Llanes</h2>
+                  </a>
+                </div>
+                <div class="follow-user-content-desc">
+                  <a href="#">
+                    <p>
+                      4X Top Writer // Tesla fan. Technology enthusiast. AI will
+                      change the world. Madrid.
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="follow-user-button">
+                <a href="#">Follow</a>
+              </div>
+            </div>
+            <div class="who-to-follow-user">
+              <div class="follow-user-img">
+                <div class="follow-user-img-container">
+                  <img
+                    src="assets\profile-images\follow_pic_2.jpg"
+                    alt="Luca Grillo"
+                  />
+                </div>
+              </div>
+              <div class="follow-user-content">
+                <div class="follow-user-content-id">
+                  <a href="#">
+                    <h2>Ben Rogojan</h2>
+                  </a>
+                </div>
+                <div class="follow-user-content-desc">
+                  <a href="#">
+                    <p>
+                      #Data #Engineer, Strategy Development Consultant and All
+                      Around Data Guy #deeplearning #dataengineering
+                      #datascience #tech
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="follow-user-button">
+                <a href="#">Follow</a>
+              </div>
+            </div>
+            <div class="who-to-follow-user">
+              <div class="follow-user-img">
+                <div class="follow-user-img-container">
+                  <img
+                    src="assets\profile-images\follow_pic_3.jpg"
+                    alt="Marco Longo"
+                  />
+                </div>
+              </div>
+              <div class="follow-user-content">
+                <div class="follow-user-content-id">
+                  <a href="#">
+                    <h2>5ireChain</h2>
+                  </a>
+                </div>
+                <div class="follow-user-content-desc">
+                  <a href="#">
+                    <p>5ireChain — World’s first blockchain for benefit!</p>
+                  </a>
+                </div>
+              </div>
+              <div class="follow-user-button">
+                <a href="#">Follow</a>
+              </div>
+            </div>
+          </div>
+          <div class="see-more">
+            <p><a href="#">See more suggestions</a></p>
+          </div>
+        </div>
+        <div class="aside-footer">
+          <ul class="footer-links">
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Writers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Text to speech</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
